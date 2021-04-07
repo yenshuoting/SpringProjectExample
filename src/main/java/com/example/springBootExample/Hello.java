@@ -11,4 +11,8 @@ public class Hello {
 		return "Hello World !! ";
 	}
 
+	@GetMapping("/sayHelloWorld/{name}")
+	public String sayHelloWorld( @PathVariable("name") String name ) {
+		return  new String("Hello "+name+" !!");
+	}
 }
