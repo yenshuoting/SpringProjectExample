@@ -11,3 +11,8 @@ spring:
       enabled: true
       settings:
         web-admin-password: sa
+        
+  thymeleaf:
+    cache: false
+    prefix: "classpath:/templates/app/"
+    suffix: ".html"
