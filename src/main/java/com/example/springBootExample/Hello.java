@@ -1,5 +1,7 @@
 package com.example.springBootExample;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +19,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 public class Hello {
 	
 	@GetMapping("/sayHelloWorld")
-	public String sayHelloWorld() {
-		return "Hello World !! ";
+	public ResponseEntity<String> sayHelloWorld() {
+		return new ResponseEntity<String>("Hello World !! ",HttpStatus.BAD_GATEWAY) ;
 	}
 	
 	@ApiOperation(value = "根據name 配置對映物件", notes = "name必填。")

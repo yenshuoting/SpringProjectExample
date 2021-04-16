@@ -2,6 +2,7 @@ package com.example.springBootExample.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,36 +30,5 @@ public class Member implements Serializable {
 	@Column(name = "usrPwd")
 	private String usrPwd;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String geteMail() {
-		return eMail;
-	}
-
-	public void seteMail(String eMail) {
-		this.eMail = eMail;
-	}
-
-	public String getUsrName() {
-		return usrName;
-	}
-
-	public void setUsrName(String usrName) {
-		this.usrName = usrName;
-	}
-
-	public String getUsrPwd() {
-		return usrPwd;
-	}
-
-	public void setUsrPwd(String usrPwd) {
-		this.usrPwd = usrPwd;
-	}
 
 }

@@ -14,5 +14,5 @@ spring:
         
   thymeleaf:
     cache: false
-    prefix: "classpath:/templates/app/"
+    prefix: "classpath:templates/app/"
     suffix: ".html"
