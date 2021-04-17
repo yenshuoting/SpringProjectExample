@@ -546,6 +546,18 @@ ResponseEntity類的原始碼註釋說”ResponseEntity是HttpEntity的擴充套
 
 ----
 
+### 資料庫關聯
+
+#### @ManyToOne
+
+
+
+#### @OneToMany
+
+
+
+#### @ManyToMany
+
 
 
 
